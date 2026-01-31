@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .profile-card {
+            width: 300px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            text-align: center;
+        }
+
+        .info div span {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .info div small {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .follow-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .follow-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-card">
+        <img src="data:image/jpeg;base64,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" alt="User Profile Picture">
+        <h2>Shahab Fardeen</h2>
+        <p>Web Developer | Tech Enthusiast</p>
+        <p>Aspiring full-stack developer</p>
+        <div class="info">
+            <div>
+                <span>120</span>
+                <small>Posts</small>
+            </div>
+            <div>
+                <span>300</span>
+                <small>Followers</small>
+            </div>
+            <div>
+                <span>180</span>
+                <small>Following</small>
+            </div>
+        </div>
+        <a href="#" class="follow-btn">Follow</a>
+    </div>
+</body>
+
+</html>

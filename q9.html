@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+
+    <style>
+        .sale {
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+
+        .headphone img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cart {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px;
+            width: 48%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #buy {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 48%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="card">
+            <div class="headphone">
+                <div class="sale">Sale</div>
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+
+            <h1>Wireless Headphones</h1>
+
+            <p>
+                High quality wireless headphones with noise cancellation.
+            </p>
+
+            <h3>₹2,999</h3>
+
+            <div class="buttons">
+                <input type="button" id="cart" value="Add to Cart">
+                <input type="button" id="buy" value="Buy Now">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
