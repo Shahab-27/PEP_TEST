@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        .main-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading"></h1>
+    <script>
+        function addHeading() {
+            const h1 = document.getElementById("heading");
+            h1.innerText = "Welcome to JavaScript DOM Manipulation";
+            h1.style.color = "blue";
+            h1.style.backgroundColor = "lightgray";
+            h1.style.textAlign = "center";
+            h1.classList.add("main-heading");
+        }
+        window.onload = addHeading;
+    </script>
+
+</body>
+
+</html>
