@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+<script>
+    const list = document.getElementById("container")
+    const ul = document.createElement("ul");
+    list.appendChild(ul)
+    const li1 = document.createElement("li");
+    li1.textContent = "Shahab 85"
+    ul.appendChild(li1);
+    const li2 = document.createElement("li");
+    li2.textContent = "Fardeen 95"
+    ul.appendChild(li2);
+    const li3 = document.createElement("li");
+    li3.textContent = "abc 55"
+    ul.appendChild(li3);
+
+    ul.children[0].style.backgroundColor = "blue";
+    ul.children[1].style.backgroundColor = "red";
+    ul.children[2].style.backgroundColor = "magenta";
+</script>
+
+</html>
